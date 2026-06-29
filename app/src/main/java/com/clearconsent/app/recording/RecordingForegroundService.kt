@@ -72,7 +72,7 @@ class RecordingForegroundService : Service() {
                 setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP)
                 setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB)
                 setAudioSamplingRate(44100)
-                setAudioBitRate(96000)
+                setAudioEncodingBitRate(96000)
                 setOutputFile(outputFile?.absolutePath)
                 prepare()
                 start()

@@ -53,8 +53,8 @@ class SessionProcessingPipeline @Inject constructor(
                             transcriptId = sessionId,
                             speakerLabel = null, // Speaker diarization requires cloud API
                             text = line.trim(),
-                            startTime = null,
-                            endTime = null
+                            startMs = 0L,
+                            endMs = 0L
                         )
                     }
 
